@@ -1,0 +1,39 @@
+.struct-analiz {
+  margin: 120px 0 0 0;
+}
+
+.struct-analiz-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.struct-info-img {
+  float: right;
+  margin: 0 0 10px 20px;
+  width: 628px;
+  height: 308px;
+  border-radius: 20px;
+}
+
+.block-text {
+  max-width: 100%;
+  margin: auto;
+  line-height: 130%;
+}
+
+
+@media (max-width: 1024px) {
+  .struct-info-img {
+    float: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .struct-analiz-info-inner {
+    overflow: hidden;
+  }
+
+  .block-text {
+    text-align: justify;
+  }
+}

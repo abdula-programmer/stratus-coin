@@ -1,0 +1,42 @@
+.invest {
+  padding: 50px 0 0;
+  margin-top: 70px;
+}
+
+
+.invest-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.invest-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 1024px) {
+  .invest-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .invest-img {
+    margin: 0 auto;
+  }
+
+
+}
+@media (max-width: 768px) {
+  
+  
+}
+@media (max-width: 425px) {
+  
+}
+
+@media (max-width: 320px) {
+  
+} 

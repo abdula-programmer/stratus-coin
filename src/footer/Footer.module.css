@@ -1,0 +1,85 @@
+.footer {
+  padding: 80px 0 40px;
+  background-color: #000;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 0 20px;
+  border-bottom:1px solid rgb(126, 161, 179);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo__inscription {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+
+.contacts-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.contact {
+  border-radius: 50%;
+  background: #0d1f28;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all;
+  
+}
+
+.contact-logo {
+  font-size: 20px;
+}
+.contact:hover {
+  cursor: pointer;
+  background: #0d1f2887;
+}
+
+.contact-link {
+  color: #fff;
+}
+
+
+.footer-contacts-title {
+  text-align: right;
+  color: rgb(126, 161, 179);
+}
+
+.copy {
+  color: rgb(126, 161, 179);
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-contacts-title {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+}

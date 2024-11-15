@@ -1,0 +1,33 @@
+.liqudity {
+  padding: 50px 0 0 ;
+  margin: 70px 0 0;
+}
+
+.liqudity-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.liqudity-info-block {
+  max-width: 600px;
+  margin: 0 20px 0 0 ;
+  width: 100%;
+}
+
+.liqudity-img {
+  width: 100%;
+  border-radius: 20px;
+  
+}
+
+
+@media (max-width: 1024px) {
+  .liqudity-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .liqudity-info-block {
+    margin: 0 0 20px 0;
+  }
+}

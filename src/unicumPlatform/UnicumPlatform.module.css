@@ -1,0 +1,72 @@
+.unicum-platform {
+  margin: 120px 0 0;
+}
+
+.unicum-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unicum-list {
+  list-style: none;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 30px;
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+.unicum-item {
+  padding: 15px;
+  border: 1px solid #1c546e;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unicum-item-top{ 
+  display: flex;  
+  align-items: center;
+}
+
+.unicum-item-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.unicum-item-description {
+  color: rgb(126, 161, 179);
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .unicum-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 920px) {
+  .unicum-list {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .unicum-item-description {
+    font-size: 14px;
+  }
+
+  .unicum-item-top h2{
+    font-size: 20px;
+  }
+
+  .block-description {
+    text-align: center;
+  }
+}
+

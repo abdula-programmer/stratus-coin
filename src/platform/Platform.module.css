@@ -1,0 +1,203 @@
+.platform {
+  padding-top: 50px;
+  margin: 70px 0 60px;
+}
+
+.levels-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-platform {
+  margin-bottom: 20px;
+
+}
+
+.levels-block-text {
+  text-align: center;
+  margin: 0 auto;
+  min-width: 930px;
+  margin-bottom: 50px;
+  margin: 0 auto 40px;
+}
+
+.levels {
+  margin-left: 0;
+  /* max-width: 500px; */
+  /* min-height: 250px; */
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  margin: 0 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff !important;
+  cursor: pointer;
+  
+}
+
+.swiper-pagination-bullet-active{
+  background: #007aff !important;
+}
+
+.level {
+  background: url('../../public/img/smart-contract.png');
+  padding: 15px;
+  min-height: 215px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #1c546e;
+  box-sizing: border-box;
+
+  position: relative;
+  cursor: default;
+}
+
+.level::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+	left: 0;
+	right: 0;
+  z-index: -1;
+
+  border-radius: 20px;
+
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .64);
+}
+
+.wraper {
+  height: fit-content !important;
+}
+
+.level-title {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.level-description {
+
+  display: flex;
+}
+
+.level-text {
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.level-icon {
+  display: flex;
+}
+
+.level-icon img {
+  width: 500px;
+}
+
+
+.arrows {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 0 0;
+  
+}
+
+.arrows:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  transition: 0.4s all ease;
+  transform: rotate(180deg);
+}
+
+.arrow-left:hover {
+  transform: translateX(-10px) rotate(180deg);
+}
+
+.arrow-right {
+  transition: 0.4s all ease;
+}
+
+.arrow-right:hover {
+  transform: translateX(10px);
+}
+
+.arrow-img {
+  width: 30px;
+}
+
+.swiperButtonNext,
+.swiperButtonPrev {
+  color: #000; /* Цвет кнопок */
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  display: block;
+}
+.swiperButtonNext {
+  right: 10px; /* Позиция кнопки Next */
+}
+.swiperButtonPrev {
+  left: 10px; /* Позиция кнопки Prev */
+}
+
+@media (max-width: 1024px) {
+  .levels-block {
+    flex-direction: column-reverse;
+  }
+
+  .levels-block-text {
+    text-align: center;
+    max-width: 100%;
+    margin:  0 0 40px 0;
+    min-width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .level {
+    min-height: 330px;
+  }
+
+  .level-description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .level-text {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .level {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+}
+@media (max-width: 425px) {
+  .level {
+    min-height: 265px;
+  }
+
+  .level-text { 
+    max-width: 90%;
+    font-size: 16px;
+  }
+}

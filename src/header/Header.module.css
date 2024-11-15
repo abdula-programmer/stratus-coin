@@ -1,0 +1,39 @@
+header.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+
+  background: #011119eb;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+.logo{
+  max-width: 40px;
+  width: 100%;
+  
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 1rem;
+  line-height: 145%;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  header.header {
+    padding: 0 20px;
+    width: 100vw;
+  }
+}

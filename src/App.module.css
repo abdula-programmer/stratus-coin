@@ -1,0 +1,6 @@
+.app {
+  position: relative;
+}
+.preloader-active {
+  opacity: 1;
+}
